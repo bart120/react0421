@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, CardBody, CardImg, CardTitle, Col, Row } from 'reactstrap';
+import BrandModel from '../../../models/BrandModel';
 
 interface IFooterState {
-    brands: Array<any>,
+    brands: Array<BrandModel>,
 }
 
 interface IFooterProperties {
