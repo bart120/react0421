@@ -17,9 +17,7 @@ class Footer extends React.Component<IFooterProperties, IFooterState> {
     }
     //brands: Array<any> = [];
 
-    constructor(props: IFooterProperties) {
-        super(props)
-    }
+
 
     componentDidMount() {
         console.log("componentDidMount");

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, ButtonGroup, Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Button, ButtonGroup, Collapse, Nav, Navbar, NavbarToggler, NavItem } from 'reactstrap';
 
 interface IHeaderState {
     lang: string
