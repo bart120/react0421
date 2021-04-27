@@ -32,7 +32,7 @@ class Header extends React.Component<{}, IHeaderState> {
                 <Collapse navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link to="/cars/list">Voitures</Link>
+                            <Link to="/cars/list2">Voitures</Link>
                         </NavItem>
                         <NavItem>
                             <Link to="/cars/add">Ajouter</Link>
