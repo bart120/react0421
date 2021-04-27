@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, ButtonGroup, Collapse, Nav, Navbar, NavbarToggler, NavItem } from 'reactstrap';
+import { NavLink } from '..';
 
 interface IHeaderState {
     lang: string
@@ -32,13 +33,13 @@ class Header extends React.Component<{}, IHeaderState> {
                 <Collapse navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link to="/cars/list2">Voitures</Link>
+                            <NavLink to="/cars/list"><span>Voitures</span></NavLink>
                         </NavItem>
                         <NavItem>
-                            <Link to="/cars/add">Ajouter</Link>
+                            <NavLink to="/cars/add">Ajouter</NavLink>
                         </NavItem>
                         <NavItem>
-                            <Link to="/auth/login">Se connecter</Link>
+                            <NavLink to="/auth/login">Se connecter</NavLink>
                         </NavItem>
                         <NavItem>
                             <ButtonGroup>
