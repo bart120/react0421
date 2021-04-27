@@ -31,13 +31,12 @@ class MainRoutes extends React.Component<IMainRoutesProps, IMainRoutesState> {
         );
     }
 
-    spinner = () => {
-        return (
-            <div>
-                <Spinner color="primary" style={{ width: '3rem', height: '3rem' }} />
-            </div>
-        );
-    }
+    spinner = (
+        <div>
+            <Spinner color="primary" style={{ width: '3rem', height: '3rem' }} />
+        </div>
+    );
+
 }
 
 export default MainRoutes;
