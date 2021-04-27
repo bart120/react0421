@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, ButtonGroup, Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 
 interface IHeaderState {
@@ -26,18 +27,18 @@ class Header extends React.Component<{}, IHeaderState> {
         //console.log('render');
         return (
             <Navbar color="dark" dark expand="md">
-                <a className="navbar-brand" href="#">RectAuto</a>
+                <Link className="navbar-brand" to="/">RectAuto</Link>
                 <NavbarToggler />
                 <Collapse navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="#">Voitures</NavLink>
+                            <Link to="/cars/list">Voitures</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Ajouter</NavLink>
+                            <Link to="/cars/add">Ajouter</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Se connecter</NavLink>
+                            <Link to="/auth/login">Se connecter</Link>
                         </NavItem>
                         <NavItem>
                             <ButtonGroup>

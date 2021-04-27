@@ -51,7 +51,7 @@ class Footer extends React.Component<IFooterProperties, IFooterState> {
                     {this.state.brands.map((obj: any, index: number) =>
                         <Col key={index}>
                             <Card>
-                                <CardImg top width="100%" src={`images/${obj.image}`} alt="Card image cap" />
+                                <CardImg top width="100%" src={`/images/${obj.image}`} alt="Card image cap" />
                                 <CardBody>
                                     <CardTitle tag="h5">{obj.name}</CardTitle>
                                 </CardBody>
