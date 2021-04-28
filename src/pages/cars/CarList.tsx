@@ -26,7 +26,7 @@ class CarList extends React.Component<ICarListProps & RouteComponentProps, ICarL
                 </thead>
                 <tbody>
                     {this.state?.cars.map(car => {
-                        return (<tr>
+                        return (<tr key={car.id}>
                             <td>{car.model}</td>
                             <td>{car.price} €</td>
                             <td>{car.dateOfCirculation}</td>

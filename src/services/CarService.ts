@@ -11,4 +11,14 @@ export class CarService extends BaseService<CarModel>{
     getAll(): Promise<Array<CarModel>> {
         return this.getElements();
     }
+
+    getCarById(id: number): Promise<CarModel> {
+        return this.getElement(id);
+    }
+
+    save(car: CarModel): Promise<CarModel> {
+        car.price = +car.price;
+        car.markID = +car.markID;
+        return this.insert(car);
+    }
 }

@@ -25,8 +25,6 @@ class BrandsService extends BaseService<BrandModel> {
             }
         });*/
     }
-
-
 }
 
 export default BrandsService;
